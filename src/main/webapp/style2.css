@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #BC8BC2;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #916496;
+    border-radius: 4px;
+    color: white;
+}
+
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #916496;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+ 
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 0.9rem;
+    }
+
+    .home-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .home-info p {
+        margin: 1rem 2rem;
+    }
+
+    .home-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+
+    .team {
+        margin: 0 1rem;
+    }
+}
